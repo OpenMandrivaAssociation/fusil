@@ -44,6 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %doc AUTHORS COPYING INSTALL README README.windows.txt TODO
+%doc projects
 %{_bindir}/%{name}
 %py_puresitedir/%{name}
 %py_puresitedir/*.egg-info
