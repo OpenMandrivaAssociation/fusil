@@ -1,6 +1,6 @@
 %define name 	fusil
 %define version 0.9
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: 	Framework for fuzzing
 Name: 		%{name}
@@ -13,7 +13,7 @@ Source0: 	%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: 	noarch
 BuildRequires: 	python-devel
-Requires: 	python
+Requires: 	python python-ptrace
 
 %description
 Fusil the fuzzer is a Python library used to write fuzzing programs. 
