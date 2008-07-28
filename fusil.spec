@@ -1,6 +1,6 @@
 %define name 	fusil
-%define version 0.9
-%define release %mkrel 2
+%define version 0.9.1
+%define release %mkrel 1
 
 Summary: 	Framework for fuzzing
 Name: 		%{name}
