@@ -1,5 +1,5 @@
 %define name 	fusil
-%define version 0.9.1
+%define version 1.0.0
 %define release %mkrel 1
 
 Summary: 	Framework for fuzzing
@@ -16,12 +16,12 @@ BuildRequires: 	python-devel
 Requires: 	python python-ptrace
 
 %description
-Fusil the fuzzer is a Python library used to write fuzzing programs. 
-It helps to start process with a prepared environment (limit memory, 
-environment variables, redirect stdout, etc.), start network client 
-or server, and create mangled files. Fusil has many probes to detect 
-program crash: watch process exit code, watch process stdout and 
-syslog for text patterns (eg. "segmentation fault"), watch session 
+Fusil the fuzzer is a Python library used to write fuzzing programs.
+It helps to start process with a prepared environment (limit memory,
+environment variables, redirect stdout, etc.), start network client
+or server, and create mangled files. Fusil has many probes to detect
+program crash: watch process exit code, watch process stdout and
+syslog for text patterns (eg. "segmentation fault"), watch session
 duration, watch cpu usage (process and system load), etc.
 
 %prep
@@ -34,7 +34,7 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=%{buildroot} 
+python setup.py install --root=%{buildroot}
 
 
 %clean
@@ -44,8 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %doc AUTHORS COPYING INSTALL README README.windows.txt TODO
-%doc projects
-%{_bindir}/%{name}
+%{_bindir}/%{name}-*
 %py_puresitedir/%{name}
 %py_puresitedir/*.egg-info
 
