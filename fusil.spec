@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 License: 	GPL
 Group: 		Development/Other
-URL: 		http://fusil.hachoir.org/trac
+URL: 		https://fusil.hachoir.org/trac
 Source0: 	http://pypi.python.org/packages/source/f/%{name}/%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: 	noarch
